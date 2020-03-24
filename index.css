@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;  
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  }
+  
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-color: RGB(106, 90, 205);
+    min-height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .menu {
+    display: none;
+  }
+
+  .cta-link {
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .cta-link:hover {
+    background-color: white;
+    color: #66CCCC;
+    border: 1px solid #66CCCC;
+  }
+ 
+  .header-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-container {
+  
+  }
+
+  .wave {
+    width: 0;
+    height: 0;
+    border-bottom: 64px solid white;
+    border-left: 65px solid transparent;
+  }
+
+  .logo-sub {
+    max-width: 50px;
+    text-align: justify;
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+  }
+
+  .logo-header {
+      font-weight: 700;
+      font-size: 90px;
+      color:white;
+      margin: 0 10px;
+      margin-bottom: -31px;
+  }
+
+  .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+  }
+
+  .nav-wrap {
+      display: flex;
+      justify-content: space-around;
+      background-color: RGB(106, 90, 205);
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+  }
+
+  .nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .section-heading {
+    color: RGB(106, 102, 128);
+    font-weight: 700;
+    font-size: 30px;
+    padding: 40px 0;
+  }
+
+  img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+   }
+h2 {
+  margin-bottom: .5em;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
