@@ -4,179 +4,212 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <script type="text/javascript" src="index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <body>
-    <!-- Links (sit on top) -->
-    <div class="w3-top">
+    <!-- Header with image -->
+    <header class="header-image" id="home">
         <div class="nav-wrap">
-            <div class="nav-item">
-                <a href="#" class="nav-link">HOME</a>
+            <div class="nav-item  content-link">
+                <a href="#" class="nav-link">PARTICIPATE</a>
             </div>
-            <div class="nav-item">
+            <div class="nav-item  content-link">
                 <a href="#about" class="nav-link">ABOUT</a>
             </div>
-            <div class="nav-item">
-                <a href="#menu" class="nav-link">TEAM</a>
+            <div class="nav-item  content-link">
+                <a href="#team" class="nav-link">TEAM</a>
             </div>
-            <div class="nav-item">
-                <a href="#where" class="nav-link">CONTACT</a>
+            <div class="nav-item content-link">
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <div class="nav-item  content-link">
+                <a href="#resources" class="nav-link">RESOURCES</a>
             </div>
         </div>
-    </div>
-
-    <!-- Header with image -->
-    <header class="bgimg" id="home">
-        <div class="logo-container">
-            <div class="logo-wrap">
-                <div class="wave"></div>
-                <div class="logo-header">RAMP</div>
+        <div class="header-overlay">
+            <div class="logo-container">
+                <img class="logo" src="./images/white-logo.png"  alt="logo">
+                <div class="button-container">
+                    <h3 class="button-header-text">The repeated assessment study of mental health in pandemics study is now open for participation</h3>
+                    <div class="button-align">
+                    <button class="header-button"><a class="participate" href="https://kcliop.eu.qualtrics.com/jfe/form/SV_0DrSSOISyMOqN5r" target=_blank>Participate</a></button>
+                    <a class="info-sheet-link" href="./info_sheet.pdf" download>Download the information sheet</a>
+                </div>
             </div>
-            <span class="logo-sub">repeated assessment of mental health in pandemics</span>
-        </div>
-        <div class="link-container">
-            <h1 class="cta-link">Click here to take part in the study</h1>
         </div>
     </header>
 
     <!-- Add a background color and large text to the whole page -->
-    <div class="w3-sand w3-grayscale w3-large">
+    <div class="page-container">
 
         <!-- About Container -->
-        <div class="w3-container" id="about">
-            <div class="w3-content" style="max-width:700px">
-                <h5 class="section-heading">ABOUT THE STUDY</h5>
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
-                    sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is
-                            the new sweet.</i></p>
-                    <p>Chef, Coffeeist and Owner: Liam Brown</p>
-                </div>
+        <div class="section-container" id="about">
+            <div class="section-content">
+                <h2 class="section-heading">ABOUT THE STUDY</h2>
+                <p>The repeated assessment of mental health in pandemics (RAMP) study is a multi-disciplinary, collaborative study aiming to assess the impact of the COVID-19 pandemic on the mental health and wellbeing of people across the UK. Efforts to control the spread of the pandemic have led to drastic behaviour and routine changes as individuals are encouraged to self-isolate, work from home and implement vigilant self-hygiene.</p>
+                <p>We don’t yet know what effect this new situation will have on how people think, feel and act or the impact on our households, health and lifestyle. With RAMP, we will monitor the mental health and wellbeing of people across the UK during this pandemic and try to understand the impact of COVID-19 so that we can better support people in the future.</p>
+                <p><strong>You must be a resident of England, Scotland, Wales or Northern Ireland and be over the age of 16 to participate in this study. 
+            </strong></p>
+                <p><strong>You will be asked a series of different questions about your health, wellbeing and mental health. We will send follow up surveys every two weeks and might send very short questions after any major government announcement. 
+            </strong></p>
+                <p>If you're eligible to participate, you can <strong><a class="content-link" target=_blank href=https://kcliop.eu.qualtrics.com/jfe/form/SV_bl5GXy6nUr22beB>take part here</strong></a>. You can also <strong><a href="./info_sheet.pdf" class="content-link" download>download the information sheet.</a></strong></p>
             </div>
         </div>
 
-        <!-- Menu Container -->
-        <div class="w3-container" id="menu">
-            <div class="w3-content" style="max-width:700px">
-
-                <h5 class="section-heading">WHO WE ARE</h5>
-
+        <!-- Team Container -->
+        <div class="section-container" id="team">
+            <div class="section-content">
+                <h2 class="section-heading">TEAM</h2>
+                <p>RAMP is a collaborative effort led by a research team at King’s College London, in consultation with expert clinicians, service users, mental health charities and the NIHR bioresource. We have received financial support from King’s Together and kind donations of time and effort from a wealth of people as we have developed this tool.</p>
+                <p class="spacer"><strong class="team-subheading">Research team</strong></p>
                 <div class="grid-container">
-
-                    <article id="3685" class="location-listing">
-
-                        <a class="location-title" href="#">
-                            San Francisco </a>
-
-                        <div class="location-image">
-                            <a href="#">
-                                <img width="300" height="169"
-                                    src="https://shttps://i1.rgstatic.net/ii/profile.image/314840797646848-1452075303137_Q512/Kirstin_Purves.jpg3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg"
-                                    alt="san francisco"> </a>
-
+                    <div class="team-images">
+                        <a href="https://www.kcl.ac.uk/people/katherine-young" target=_blank>
+                            <img class="team-picture" width="300" height="169" src="./images/katherine.jpg" alt="image">
+                        </a>
+                        <div class="team-text">
+                            <a href="https://www.kcl.ac.uk/people/katherine-young" target=_blank class="content-link team-name">Dr Katherine Young</a>
+                                <p class="team-name">Primary investigator</p>
                         </div>
-
-                    </article>
-
-                    <article id="3688" class="location-listing">
-
-                        <a class="location-title" href="#">
-                            London </a>
-
-                        <div class="location-image">
-                            <a href="#">
-                                <img width="300" height="169"
-                                    src="https://www.kcl.ac.uk/importedimages/schools/iop/departments/mrc/sgdp/purves-kirstin-kclsgdp-2019-10-02-000381.x1f87cc66.jpg?w=185&h=278&crop=160,160,12,7"
-                                    alt="london"> </a>
-
+                    </div>
+                    <div class="team-images">
+                        <a href="https://www.kcl.ac.uk/people/kirstin-purves" target=_blank>
+                            <img class="team-picture" width="300" height="169" src="./images/kirstin.jpg" alt="image">
+                        </a>
+                        <div class="team-text">
+                            <a class="content-link team-name" href="https://www.kcl.ac.uk/people/kirstin-purves" target=_blank>Dr. Kirstin Purves</a>
+                                <p class="team-name">Postdoctoral researcher</p>
                         </div>
-
-                    </article>
-
-                    <article id="3691" class="location-listing">
-
-                        <a class="location-title" href="#">
-                            New York </a>
-
-                        <div class="location-image">
-                            <a href="#">
-                                <img width="300" height="169"
-                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/new-york-768x432.jpg"
-                                    alt="new york"> </a>
-
+                    </div>
+                    <div class="team-images">
+                        <a href="https://kclpure.kcl.ac.uk/portal/shannon.bristow.html" target=_blank>
+                            <img class="team-picture" width="300" height="169" src="./images/shannon.jpg" alt="image">
+                        </a>
+                        <div class="team-text">
+                            <a class="content-link team-name" href="https://kclpure.kcl.ac.uk/portal/shannon.bristow.html" target=_blank>Shannon Bristow</a>
+                                <p class="team-name">Research associate</p>
                         </div>
-
-                    </article>
-
-                    <article id="3694" class="location-listing">
-
-                        <a class="location-title" href="#">
-                            Cape Town </a>
-
-                        <div class="location-image">
-                            <a href="#">
-                                <img width="300" height="169"
-                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/cape-town-768x432.jpg"
-                                    alt="cape town"> </a>
-
+                    </div>
+                    <div class="team-images">
+                        <a href="https://www.kcl.ac.uk/people/kirstin-purves" target=_blank>
+                            <img class="team-picture" width="300" height="169" src="./images/gerome.jpg" alt="image">
+                        </a>
+                        <div class="team-text">
+                            <a href="https://www.kcl.ac.uk/people/kirstin-purves" class="content-link team-name" target=_blank>Professor Gerome Breen</a>
+                                <p class="team-name">Professor of Psychiatric Genetics</p>
                         </div>
-
-                    </article>
-
-                    <article id="3697" class="location-listing">
-
-                        <a class="location-title" href="#">
-                            Beijing </a>
-
-                        <div class="location-image">
-                            <a href="#">
-                                <img width="300" height="169"
-                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/beijing-768x432.jpg"
-                                    alt="beijing"> </a>
-
+                    </div>
+                    <div class="team-images">
+                        <a href="https://www.kcl.ac.uk/people/thalia-eley" target=_blank>
+                            <img class="team-picture" width="300" height="169" src="./images/thalia.jpg" alt="image">
+                        </a>
+                        <div class="team-text">
+                            <a href="https://www.kcl.ac.uk/people/thalia-eley" target=_blank class="content-link team-name">Professor Thalia Eley</a>
+                                <p class="team-name">Professor of Developmental Behavioural Genetics</p>
                         </div>
+                    </div>
 
-                    </article>
-
-                    <article id="3700" class="location-listing">
-
-                        <a class="location-title" href="#">
-                            Paris </a>
-
-                        <div class="location-image">
-                            <a href="#">
-                                <img width="300" height="169"
-                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/paris-768x432.jpg"
-                                    alt="paris">
-                            </a>
+                    <div class="team-images">
+                        <a href="https://www.kcl.ac.uk/people/matthew-hotopf" target=_blank>
+                            <img class="team-picture" width="300" height="169" src="./images/matthew.png" alt="image">
+                        </a>
+                        <div class="team-text">
+                            <a href="https://www.kcl.ac.uk/people/matthew-hotopf" target=_blank class="content-link team-name">Professor Matthew Hotopf</a>
+                                <p class="team-name">Vice Dean of Research</p>
                         </div>
-
-                    </article>
-
+                    </div>
                 </div>
-            </div>
-
-            <!-- Contact/Area Container -->
-            <div class="w3-container" id="where" style="padding-bottom:32px;">
-                <div class="w3-content" style="max-width:700px">
-                    <h5 class="section-heading">WHERE TO FIND US</h5>
-                    <p>Find us at some address at some place.</p>
-                    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-                    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
-                        understand your needs and we will cater the food to satisfy the biggerst criteria of them all,
-                        both look and taste.</p>
-                    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-
+                <div class="team-container">
+                    <p class="spacer"><strong class="team-subheading">Additional contributors</strong></p>
+                    <p>name Namerson, Kirstin Kirstinson, Jacko Jackiiiii</p>
                 </div>
-            </div>
+                <div class="team-container">
+                    <p class="spacer"><strong class="team-subheading">Our collaborators and supporters</strong></p>
+                    <img class="collab-logos small" src="./images/kings_logo.png">
+                    <img class="collab-logos" src="./images/mq.png">
+                    <img class="collab-logos" src="./images/nihr.png">
+                    <img class="collab-logos small" src="./images/glad.jpg">
+                </div>
 
-            <!-- End page content -->
+            </div>
         </div>
+
+        <!-- FAQ Container -->
+        <div class="section-container" id="faq">
+            <div class="section-content">
+                <h2 class="section-heading">FAQ</h2>
+                <div class="resource-item">
+                    <p><strong>Who can take part?</strong></p>
+                    <p>The RAMP Study is recruiting nationally, and you can participate as long as you are a resident of England, Scotland, Wales or Northern Ireland and are over the age of 16. </p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>What is involved?</strong></p>
+                    <p>After a longer baseline assessment, we will send follow up surveys every two weeks and might send very short questions after any major government announcement. The survey covers a lot of different questions about your health, wellbeing and mental health. We appreciate this can take time to complete, but hope for your help in understanding the impact of this and any future pandemics on the mental health of our communities.</p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>How long will it take me?</strong></p>
+                    <p>You should set aside about 35-40 minutes for the baseline questionnaire, and about 15 minutes for the follow up questionnaires every 2-weeks, although for most people it will be shorter.
+                    </p>
+                    </p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>Will the surveys be this long every time?</strong></p>
+                    <p>No, the very first questionnaire is the longest. All of our follow up questionnaires will be about half the time.</p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>Do I  have to do it all in one go?</strong></p>
+                    <p>No. You can leave the question and come back to it after a short break.<strong> But you do need to return to the questionnaire using the same browser (e.g. chrome, opened using the same computer or device).</strong></p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>Why should I take part?</strong></p>
+                    <p>By taking part you will be helping us track the impact of this pandemic on our mental health and wellbeing so that we can understand what helps and what is harmful and how to react to protect individuals and communities during pandemics. </p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>What sort of things will I be asked about?</strong></p>
+                    <p>We are going to ask you to answer questions about yourself, your health, your education or employment, your feelings about and during the pandemic and your mental health before and during the pandemic. We will also ask you some questions about your physical and neurological health that might be important factors in how you are feeling. </p>
+                    <p>We are also interested in the things that you are doing that you are finding positive or helpful during this time, as we hope to identify and share those things that seem to help.</p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>What will you do with my data and will it be safe? </strong></p>
+                    <p>Keeping your information secure is our highest priority. There are a number of regulations and policies that RAMP complies with to ensure data is protected.</p>
+                    <p><strong><a class="content-link" href="https://gdpr-info.eu/" target=_blank>The EU General Data Protection Regulation (GDPR)</strong></a> was put in place to ensure the protection of all EU citizens’ data privacy. It also gives people the rights to access any information held about them.</p>
+                </div>
+                <div class="resource-item">
+                    <p><strong>Who do I contact if I have a problem or question? </strong></p>
+                    <p>You can email the study team on <strong><a class="content-link" href="mailto:rampstudy@kcl.ac.uk">rampstudy@kcl.ac.uk</a></strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resources Container -->
+        <div class="section-container" id="resources" style="padding-bottom:32px;">
+            <div class="section-content">
+                <h2 class="section-heading">RESOURCES</h2>
+                <p>This is a difficult time for everyone, and many may find it overwhelming. If you are being affected by the outbreak of COVID-19, we have collated some helpful websites and sources of help and support.</p>
+                <div class="resource-item">
+                    <h3><a class="content-link team-subheading" target=_blank href="https://www.mind.org.uk/information-support/coronavirus-and-your-wellbeing/">Mind</a></h3>
+                    <p>The MIND website has really useful resources to help you cope if you are feeling anxious, worried or isolated during the pandemic.</p>
+                </div>
+                <div class="resource-item">
+                    <h3><a  class="content-link team-subheading" target=_blank href="https://www.samaritans.org/how-we-can-help/support-and-information/if-youre-having-difficult-time/if-youre-worried-about-your-mental-health-during-coronavirus-outbreak/">Samaritans</a></h3>
+                    <p>The Samaritans have a frequently updated page which you might find helpful if you are worried about your mental health during this time.</p>
+                </div>
+                <div class="resource-item">
+                    <h3><a class="content-link team-subheading" target=_blank href="https://www.nhs.uk/oneyou/every-mind-matters/coronavirus-covid-19-staying-at-home-tips/">NHS</a></h3>
+                    <p>The NHS has some hints and tips for maintaining your mental health while staying at home</p>
+                </div>
+                <div class="resource-item">
+                    <h3><a class="content-link team-subheading" target=_blank href="https://www.who.int/docs/default-source/coronaviruse/mental-health-considerations.pdf">WHO</a></h3>
+                    <p>The World Health organisation have released a document detailing mental health and psychosocial considerations during this outbreak.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+xx
+        </div>
+        <!-- End page content -->
+    </div>
 
 </body>
 
