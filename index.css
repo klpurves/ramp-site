@@ -16,7 +16,7 @@ a {
 i {
   margin-right: 10px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .participate {
@@ -41,12 +41,13 @@ p {
 }
 
 .spacer {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .social-link {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .header-image {
@@ -201,14 +202,15 @@ p {
   background: #4fd1b7;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 100px;
   display: flex;
   justify-content: flex-start;
-  align-items:space-around;
+  align-items: space-around;
 }
 
 .footer-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -221,7 +223,16 @@ p {
 }
 
 .footer-logo {
-  width: 40%;
+  width: 17%;
+}
+
+.footer-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-email-wrap {
+  max-width: 100px;
 }
 
 .social-wrap {
@@ -352,8 +363,7 @@ p {
 
 @media (max-width:800px) {
   .page-container {
-    padding: 40px;
-    padding-top: 20px;
+    padding: 20px 40px 0 40px;
   }
 
   .header-button {
@@ -448,8 +458,19 @@ p {
   .extra-long {
     width: 55%;
   }
+
   h3 {
     margin-top: 10px;
   }
 
+  .footer-logo {
+    width: 50%;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+  .social-link {
+    margin-bottom: 5px;
+  }
 }
