@@ -46,7 +46,7 @@ p {
 
 .social-link {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
@@ -198,11 +198,11 @@ p {
 }
 
 .footer {
-  min-height: 150px;
+  height: 26vh;
   background: #4fd1b7;
   color: white;
   text-align: center;
-  padding: 30px 100px;
+  padding: 30px 150px;
   display: flex;
   justify-content: flex-start;
   align-items: space-around;
@@ -217,29 +217,45 @@ p {
 
 .footer-logo-container {
   padding-top: 20px;
+  margin-top: 40px;
   border-top: 1px solid white;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-logo {
-  width: 17%;
+  width: 30%;
 }
 
 .footer-top-row {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
   justify-content: space-between;
 }
 
 .footer-email-wrap {
-  max-width: 100px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+}
+
+.footer-text {
+  color: white;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: right;
+  margin: 0;
 }
 
 .social-wrap {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button-header-text {
@@ -388,6 +404,12 @@ p {
     font-size: 16px;
   }
 
+  i {
+
+    font-size: 16px;
+    margin: 5px;
+  }
+
   h2 {
     margin-top: 0;
   }
@@ -464,13 +486,23 @@ p {
   }
 
   .footer-logo {
-    width: 50%;
+    width: 40%;
   }
 
   .footer {
     padding: 20px;
   }
+
+  .footer-text {
+    font-size: 14px;
+  }
+  
   .social-link {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .footer-top-row {
     margin-bottom: 5px;
   }
 }
