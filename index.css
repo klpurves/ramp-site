@@ -19,10 +19,6 @@ i {
   font-size: 18px;
 }
 
-.participate {
-  color: #4fd1b7;
-}
-
 h1,
 h2,
 h3,
@@ -40,14 +36,12 @@ p {
   font-size: 18px;
 }
 
-.spacer {
-  margin-bottom: 20px;
+.page-container {
+  margin-bottom: 80px;
 }
 
-.social-link {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 10px;
+.spacer {
+  margin-bottom: 20px;
 }
 
 .header-image {
@@ -197,66 +191,7 @@ p {
   color: white;
 }
 
-.footer {
-  height: 26vh;
-  background: #4fd1b7;
-  color: white;
-  text-align: center;
-  padding: 30px 150px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: space-around;
-}
 
-.footer-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.footer-logo-container {
-  padding-top: 20px;
-  margin-top: 40px;
-  border-top: 1px solid white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo {
-  width: 30%;
-}
-
-.footer-top-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  justify-content: space-between;
-}
-
-.footer-email-wrap {
-  font-size: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: white;
-}
-
-.footer-text {
-  color: white;
-  font-size: 18px;
-  line-height: 15px;
-  text-align: right;
-  margin: 0;
-}
-
-.social-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .button-header-text {
   margin-bottom: 20px;
@@ -369,7 +304,7 @@ p {
 }
 
 .participate {
-  color: rgba(79, 209, 183, );
+  color: #4fd1b7;
   font-size: 26px;
 }
 
@@ -377,28 +312,74 @@ p {
   text-decoration: underline;
 }
 
+.footer {
+  height: 26vh;
+  background: #4fd1b7;
+  color: white;
+  text-align: center;
+  padding: 30px 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-logo-container {
+  padding-top: 20px;
+  margin-top: 40px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 30%;
+}
+
+.footer-top-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.social-link {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.social-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-email-wrap {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+}
+
+.footer-text {
+  color: white;
+  font-size: 18px;
+  line-height: 15px;
+  text-align: right;
+  margin: 0;
+}
+
 @media (max-width:800px) {
-  .page-container {
-    padding: 20px 40px 0 40px;
-  }
-
-  .header-button {
-    margin-bottom: 40px;
-  }
-
-  .header-image {
-    background-image: url('./images/phone_small.jpg');
-  }
-
-  .info-sheet-link {
-    padding: 12px;
-    border-radius: 8px;
-    margin: 0;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-  }
 
   p {
     font-size: 16px;
@@ -416,10 +397,45 @@ p {
 
   h3 {
     font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .page-container {
+    padding: 20px 40px 0 40px;
   }
 
   .nav-wrap {
     padding-top: 10px;
+  }
+
+  .header-button {
+    font-size: 14px;
+    background: white;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-header-text {
+    display: none;
+  }
+
+  .header-image {
+    background-image: url('./images/phone_small.jpg');
+    background-size: cover;
+  }
+
+  .info-sheet-link {
+    padding: 12px;
+    border-radius: 8px;
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
   }
 
   .logo-container {
@@ -431,41 +447,9 @@ p {
     padding-top: 133px;
   }
 
-  .header-image {
-    background-size: cover;
-  }
-
-  .team-picture {
-    width: 90px;
-    height: 90px;
-  }
-
   .logo {
     width: 60%;
     padding-bottom: 30px;
-  }
-
-  .header-button {
-    font-size: 14px;
-    background: white;
-    margin-bottom: 40px;
-  }
-
-  .button-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .section-heading {
-    padding: 30px 0 16px 0;
-  }
-
-  .button-header-text {
-    display: none;
-  }
-
-  .header-button {
-    margin: 0;
   }
 
   .header-logos {
@@ -481,28 +465,33 @@ p {
     width: 55%;
   }
 
-  h3 {
-    margin-top: 10px;
+  .team-picture {
+    width: 90px;
+    height: 90px;
   }
 
-  .footer-logo {
-    width: 40%;
+  .section-heading {
+    padding: 30px 0 16px 0;
   }
 
   .footer {
     padding: 20px;
   }
 
-  .footer-text {
-    font-size: 14px;
+  .footer-top-row {
+    margin-bottom: 5px;
   }
-  
+
   .social-link {
     font-size: 16px;
     margin-bottom: 10px;
   }
 
-  .footer-top-row {
-    margin-bottom: 5px;
+  .footer-logo {
+    width: 40%;
+  }
+
+  .footer-text {
+    font-size: 14px;
   }
 }
