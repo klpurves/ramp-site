@@ -13,6 +13,16 @@ a {
   color: RGB(106, 102, 128);
 }
 
+i {
+  margin-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+.participate {
+  color: #4fd1b7;
+}
+
 h1,
 h2,
 h3,
@@ -30,13 +40,13 @@ p {
   font-size: 18px;
 }
 
-
 .spacer {
   margin-bottom: 40px;
 }
 
-.hideme {
-  opacity: 0;
+.social-link {
+  color: white;
+  font-size: 16px;
 }
 
 .header-image {
@@ -52,7 +62,7 @@ p {
 }
 
 .header-overlay {
-  background: rgba(79, 209, 183, 0.52);
+  background: rgba(79, 209, 183, 0.72);
   position: absolute;
   top: 0;
   left: 0;
@@ -63,13 +73,22 @@ p {
   justify-content: flex-end;
 }
 
+.info-sheet-link {
+  color: #f6c669;
+}
+
+.info-sheet-link:visited {
+  color: #f6c669;
+}
+
+
 .logo {
   width: 30%;
 }
 
 .collab-logos {
   margin-right: 20px;
-  width: 180px;
+  width: 20%;
 }
 
 .small {
@@ -89,7 +108,6 @@ p {
 
 .content-link {
   font-weight: 700;
-  margin-bottom: 5px;
   border-bottom: 4px transparent solid;
 }
 
@@ -127,6 +145,7 @@ p {
   border-bottom: 3px #f6c669 solid;
   padding-bottom: 4px;
   margin-bottom: 30px;
+  line-height: 36px;
 }
 
 .team-name {
@@ -159,7 +178,7 @@ p {
 }
 
 .header-button {
-  color: white;
+  background: white;
   border-radius: 12px;
   padding: 20px;
   font-size: 20px;
@@ -171,6 +190,45 @@ p {
 
 .header-button:hover {
   background-color: #4fd1b7;
+}
+
+.header-button:hover>.participate {
+  color: white;
+}
+
+.footer {
+  min-height: 150px;
+  background: #4fd1b7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items:space-around;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-logo-container {
+  padding-top: 20px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  width: 40%;
+}
+
+.social-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .button-header-text {
@@ -189,7 +247,6 @@ p {
 
 .info-sheet-link {
   color: #f6c669;
-  text-decoration: underline;
   margin-left: 164px;
   margin-top: 14px;
 }
@@ -206,6 +263,35 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-span {
+  display: flex;
+  padding: 20px 105px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.collab-logo-span {
+  display: flex;
+  align-items: center;
+}
+
+.collab-long {
+  width: 25%;
+}
+
+.header-logos {
+  width: 10%;
+  margin: 12px;
+}
+
+.long {
+  width: 20%;
+}
+
+.extra-long {
+  width: 24%;
 }
 
 .logo-wrap {
@@ -240,7 +326,7 @@ p {
 .section-heading {
   color: RGB(106, 102, 128);
   font-weight: 700;
-  padding: 60px 0 16px 0;
+  padding: 40px 0 16px 0;
   border-bottom: 6px #f6c669 solid;
 }
 
@@ -255,17 +341,13 @@ p {
   margin: 40px 0;
 }
 
-.footer {
-  min-height: 150px;
-  width: 100%;
-  background: rgba(79, 209, 183, 0.52);
-  color: white;
-  text-align: center;
-}
-
 .participate {
   color: rgba(79, 209, 183, );
   font-size: 26px;
+}
+
+.info-sheet-link:hover {
+  text-decoration: underline;
 }
 
 @media (max-width:800px) {
@@ -278,14 +360,17 @@ p {
     margin-bottom: 40px;
   }
 
+  .header-image {
+    background-image: url('./images/phone_small.jpg');
+  }
+
   .info-sheet-link {
-    background: white;
     padding: 12px;
     border-radius: 8px;
+    margin: 0;
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    color: navy;
     font-size: 18px;
   }
 
@@ -293,21 +378,25 @@ p {
     font-size: 16px;
   }
 
+  h2 {
+    margin-top: 0;
+  }
+
   h3 {
     font-size: 22px;
   }
 
   .nav-wrap {
-    padding: 0;
+    padding-top: 10px;
   }
 
   .logo-container {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0;
     padding-bottom: 40px;
     height: 100%;
-    padding-top: 60px;
+    padding-top: 133px;
   }
 
   .header-image {
@@ -343,11 +432,24 @@ p {
     display: none;
   }
 
-  .info-sheet-link {
-    margin: 0;
-  }
-
   .header-button {
     margin: 0;
   }
+
+  .header-logos {
+    width: 30%;
+    margin: 12px;
+  }
+
+  .long {
+    width: 40%;
+  }
+
+  .extra-long {
+    width: 55%;
+  }
+  h3 {
+    margin-top: 10px;
+  }
+
 }

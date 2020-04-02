@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>RAMP Study</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="index.css">
 <script type="text/javascript" src="index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/f1919312d2.js" crossorigin="anonymous"></script>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2483844661866082');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=2483844661866082&ev=PageView
+&noscript=1"/>
+</noscript>
+</script>
+</head>
 
 <body>
-    <!-- Header with image -->
+    <!-- Header -->
     <header class="header-image" id="home">
         <div class="nav-wrap">
-            <div class="nav-item  content-link">
-                <a href="#" class="nav-link">PARTICIPATE</a>
-            </div>
             <div class="nav-item  content-link">
                 <a href="#about" class="nav-link">ABOUT</a>
             </div>
@@ -29,7 +48,7 @@
         </div>
         <div class="header-overlay">
             <div class="logo-container">
-                <img class="logo" src="./images/white-logo.png"  alt="logo">
+                <img class="logo" src="./images/logos/ramp.png"  alt="logo">
                 <div class="button-container">
                     <h3 class="button-header-text">The repeated assessment study of mental health in pandemics study is now open for participation</h3>
                     <div class="button-align">
@@ -38,12 +57,16 @@
                 </div>
             </div>
         </div>
+    </div>
     </header>
-
-    <!-- Add a background color and large text to the whole page -->
+    <div class="logo-span">
+        <img class="header-logos" src="./images/logos/kcl.jpg">
+        <img class="header-logos extra-long "  long" src="./images/logos/nihr.jpeg">
+        <img class="header-logos  long" src="./images/logos/mq.png">
+        <img class="header-logos" src="./images/logos/slam.png">
+    </div>
     <div class="page-container">
-
-        <!-- About Container -->
+        <!-- About -->
         <div class="section-container" id="about">
             <div class="section-content">
                 <h2 class="section-heading">ABOUT THE STUDY</h2>
@@ -53,11 +76,10 @@
             </strong></p>
                 <p><strong>You will be asked a series of different questions about your health, wellbeing and mental health. We will send follow up surveys every two weeks and might send very short questions after any major government announcement. 
             </strong></p>
-                <p>If you're eligible to participate, you can <strong><a class="content-link" target=_blank href=https://kcliop.eu.qualtrics.com/jfe/form/SV_bl5GXy6nUr22beB>take part here</strong></a>. You can also <strong><a href="./info_sheet.pdf" class="content-link" download>download the information sheet.</a></strong></p>
+                <p>If you're eligible to participate, you can <strong><a class="content-link" target=_blank href="https://kcliop.eu.qualtrics.com/jfe/form/SV_0DrSSOISyMOqN5r">take part here</strong></a>. You can also <strong><a href="./info_sheet.pdf" class="content-link" download>download the information sheet.</a></strong></p>
             </div>
         </div>
-
-        <!-- Team Container -->
+        <!-- Team-->
         <div class="section-container" id="team">
             <div class="section-content">
                 <h2 class="section-heading">TEAM</h2>
@@ -121,21 +143,31 @@
                     </div>
                 </div>
                 <div class="team-container">
+                    <p class="spacer"><strong class="team-subheading">Collaborators</strong></p>
+                    <p>Dr Ammar Al-Chalabi , Dr Timothy Nicholson, Dr Ray Chaudhuri, Dr Mark Richardson, Dr Thomas Pollak, Dr Sharon Stevelink, Dr Adrian Martineau.</p>
+                </div>
+                <div class="team-container">
                     <p class="spacer"><strong class="team-subheading">Additional contributors</strong></p>
-                    <p>ADD ADDITIONA CNTRIBUTORS HERE</p>
+                    <p>Molly Davies, Alicia Peel,  Brett Adey, Henry Rogers, Christopher Huebel, Jessica Mundy, Katie Thompson, Dina Monssen, Gursharan Kalsi, Tom McGregor, Megan Skelton and the GLAD, NIHR Maudsley BioResource and EDIT Lab teams.</p>
+                </div>
+                <div class="team-container">
+                    <p class="spacer"><strong class="team-subheading">With additional advice from:</strong></p>
+                    <p>Prof. Peter Jones, Dr. Evangelos Vassos, Dr. Georgina Krebs, Prof. David Veale, Dr. Talar Moukhtarian, Prof. Louise Arsenault, Dr. Colette Hirsch, Prof. Barbara Maughan, Abigail Ter Kuile, Camilla Ward, King’s College London Service User Advisory Group. </p>
                 </div>
                 <div class="team-container">
                     <p class="spacer"><strong class="team-subheading">Our collaborators and supporters</strong></p>
-                    <img class="collab-logos small" src="./images/kings_logo.png">
-                    <img class="collab-logos" src="./images/mq.png">
-                    <img class="collab-logos" src="./images/nihr.png">
-                    <img class="collab-logos small" src="./images/glad.jpg">
+                    <div class="collab-logo-span">
+                    <img class="collab-logos collab-long" src="./images/logos/brainmend.jpg">
+                    <img class="collab-logos" src="./images/logos/queenmary.png">
+                    <img class="collab-logos" src="./images/logos/edgi.png">
+                    <img class="collab-logos" src="./images/logos/glad.jpg">
+                </div>
                 </div>
 
             </div>
         </div>
 
-        <!-- FAQ Container -->
+        <!-- FAQ -->
         <div class="section-container" id="faq">
             <div class="section-content">
                 <h2 class="section-heading">FAQ</h2>
@@ -181,8 +213,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Resources Container -->
+        <!-- Resources-->
         <div class="section-container" id="resources" style="padding-bottom:32px;">
             <div class="section-content">
                 <h2 class="section-heading">RESOURCES</h2>
@@ -205,12 +236,18 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-ADD FOOTER INFORMATION HERE
-        </div>
-        <!-- End page content -->
     </div>
-
+    <div class="footer">
+        <div class="footer-container">
+        <div class="social-wrap">
+           <a class="social-link" target=_blank href="https://www.instagram.com/rampstudy/"><i class="fab fa-instagram"></i>Instagram</a>
+           <a class="social-link" target=_blank href="https://www.facebook.com/ramp.study"><i class="fab fa-facebook-square"></i>Facebook</a>
+           <a class="social-link" target=_blank href="https://twitter.com/rampstudy"><i class="fab fa-twitter-square"></i>Twitter</a>
+        </div>
+        <div class="footer-logo-container">
+        <img class="footer-logo" src="./images/logos/ramp.png"  alt="logo">
+    </div>
+    </div>
+     </div>
 </body>
-
 </html>
