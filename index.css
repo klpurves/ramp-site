@@ -69,9 +69,9 @@ p {
 }
 
 .center-text {
-font-size: 20px;
-line-height: 30px;
-text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .info-sheet-link {
@@ -241,6 +241,7 @@ text-align: center;
 .collab-logo-span {
   display: flex;
   align-items: center;
+  margin: 30px 0;
 }
 
 .collab-long {
@@ -466,8 +467,8 @@ text-align: center;
   }
 
   .header-logos {
-    width: 17%;
-    margin: 12px;
+    width: 15%;
+    margin: 5px;
   }
 
   .long {
@@ -490,6 +491,11 @@ text-align: center;
 
   .section-heading {
     padding: 30px 0 16px 0;
+  }
+
+  .collab-logos {
+    margin-right: 20px;
+    width: 35%;
   }
 
   .footer {
