@@ -13,15 +13,9 @@ a {
     color: RGB(106, 102, 128);
 }
 
-i {
-    margin-right: 10px;
-    color: white;
-    font-size: 18px;
-}
 
 li {
     margin-bottom: 10px;
-    ;
 }
 
 h1,
@@ -43,7 +37,7 @@ p {
 }
 
 .large {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
@@ -83,6 +77,10 @@ p {
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+}
+
+.social-container i {
+    color: RGB(106, 102, 128);
 }
 
 .info-sheet-link {
@@ -243,7 +241,7 @@ p {
 
 .social-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .button-align {
@@ -451,20 +449,10 @@ p {
     margin-bottom: 10px;
 }
 
-.footer-container .fab {
+.footer-container i {
+    margin-right: 10px;
     color: white;
-}
-
-.footer-container .far {
-    color: white;
-}
-
-.fab {
-    color: RGB(106, 102, 128);
-}
-
-.far {
-    color: RGB(106, 102, 128);
+    font-size: 18px;
 }
 
 .footer-logo-container {
@@ -543,7 +531,8 @@ p {
     }
 
     .header-button {
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 700;
         background: white;
         margin: 0;
     }
@@ -574,7 +563,7 @@ p {
         margin-top: 20px;
         display: flex;
         justify-content: center;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .logo-container {
@@ -587,7 +576,7 @@ p {
     }
 
     .logo {
-        width: 60%;
+        width: 80%;
         padding-bottom: 30px;
     }
 
