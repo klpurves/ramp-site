@@ -19,6 +19,11 @@ i {
     font-size: 18px;
 }
 
+li {
+    margin-bottom: 10px;
+    ;
+}
+
 h1,
 h2,
 h3,
@@ -34,6 +39,12 @@ p {
     margin-top: 20px;
     color: RGB(106, 102, 128);
     font-size: 18px;
+    line-height: 30px;
+}
+
+.large {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .page-container {
@@ -93,6 +104,10 @@ p {
 
 .small {
     width: 95px;
+}
+
+.grey {
+    color: RGB(106, 102, 128);
 }
 
 .section-container:after,
@@ -220,6 +235,16 @@ p {
     display: block;
 }
 
+.inline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 .button-align {
     display: flex;
@@ -238,6 +263,11 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
 }
 
 .header-background {
@@ -415,6 +445,28 @@ p {
     justify-content: space-between;
 }
 
+.footer-container a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-container .fab {
+    color: white;
+}
+
+.footer-container .far {
+    color: white;
+}
+
+.fab {
+    color: RGB(106, 102, 128);
+}
+
+.far {
+    color: RGB(106, 102, 128);
+}
+
 .footer-logo-container {
     padding-top: 20px;
     margin-top: 40px;
@@ -428,17 +480,15 @@ p {
     width: 30%;
 }
 
+.chart {
+    width: 100%;
+}
+
 .footer-top-row {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     justify-content: space-between;
-}
-
-.social-link {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 10px;
 }
 
 .social-wrap {
@@ -485,7 +535,7 @@ p {
     }
 
     .page-container {
-        padding: 20px 40px 0 40px;
+        padding: 20px 30px 0 40px;
     }
 
     .nav-wrap {
@@ -571,6 +621,7 @@ p {
 
     .description-title {
         line-height: 30px;
+        font-size: 18px;
     }
 
     .footer {
@@ -594,6 +645,4 @@ p {
     .footer-text {
         font-size: 11px;
     }
-
-
 }
